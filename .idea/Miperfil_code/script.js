@@ -18,3 +18,19 @@ boton.addEventListener("click", function() {
         saludoMostrado = true;
     }
 });
+const seccionContacto = document.getElementById("contacto");
+const botonNombre = document.getElementById("btn-nombre");
+let nombreMostrado = false;
+
+botonNombre.addEventListener("click", function() {
+    if (!nombreMostrado) {
+    const titulo = document.querySelector("h1");
+    titulo.textContent = "Javier Adael";
+
+        botonNombre.textContent = "Nombre Mostrado";
+        botonNombre.disabled = true;
+        botonNombre.style.backgroundColor = "#7f8c8d";
+
+        nombreMostrado = true;
+    }
+});
